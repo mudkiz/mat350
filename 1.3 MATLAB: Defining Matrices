@@ -1,0 +1,10 @@
+%Define the 3x3 matrix A with all 1's in the first row, all 2's in the second row, 
+%and all 3's in the 3rd row.
+A = [1 1 1; 2 2 2; 3 3 3];% square matrix with 1's in the first row, 2's in the second, and 3 in the third.
+%Use the size() function to compute the number of rows and columns of matrix A.
+%Store these quantities as variables numRows and numCols.
+[numRows,numCols] = size(A);%numrows variable for the rows and numcolumns for the columns
+%Use the eye() function to create the 4x4 identity matrix.  Store this matrix as I.
+I = eye(4);%makes a 4 by 4 diagonal identity matrix
+%Compute the transpose of the matrix A.  Store this transposed matrix as the matrix D.
+D = A.';%transposes matrix A onto a new matrix called D and computes it using the dot-tic operator .'
